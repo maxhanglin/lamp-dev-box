@@ -10,12 +10,15 @@ This project automates the setup of a LAMP development environment for working o
 
 * [Vagrant](http://vagrantup.com)
 
+* [Vagrant::Hostsupdater Plugin](https://github.com/cogitatio/vagrant-hostsupdater)
+
 ## How To Build The Virtual Machine
 
 Building the virtual machine is this easy:
 
     host $ git clone https://github.com/maxi-hanglin/lamp-dev-box.git
     host $ cd lamp-dev-box
+    host $ vagrant plugin install vagrant-hostsupdater
     host $ vagrant up
 
 That's it.
@@ -27,7 +30,7 @@ After the installation has finished, you can access the virtual machine with
     ...
     vagrant@lamp-dev-box:~$
 
-Port 8888 in the host computer is forwarded to port 80 in the virtual machine. Thus, applications running in the virtual machine can be accessed via localhost:8888 in the host computer.
+Port 8888 in the host computer is forwarded to port 80 in the virtual machine. Thus, applications running in the virtual machine can be accessed via localhost:8888 in the host computer. A named host was also added on _www.local.dev_ to make it easy to access to the VM.
 
 ## What's In The Box
 
