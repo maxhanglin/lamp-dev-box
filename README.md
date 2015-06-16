@@ -27,7 +27,7 @@ After the installation has finished, you can access the virtual machine with
     ...
     vagrant@lamp-dev-box:~$
 
-Port 80 in the host computer is forwarded to port 8888 in the virtual machine. Thus, applications running in the virtual machine can be accessed via localhost:8888 in the host computer.
+Port 8888 in the host computer is forwarded to port 80 in the virtual machine. Thus, applications running in the virtual machine can be accessed via localhost:8888 in the host computer.
 
 ## What's In The Box
 
